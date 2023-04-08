@@ -9,3 +9,7 @@ using namespace std;
 void Shape::print() const {
     cout << "just shape";
 }
+
+void Shape::draw(int position, char embeddingSymbols) const {
+
+}

@@ -8,10 +8,18 @@
 
 class Square : public TwoDimensionalShape {
 public:
-    Square() = default;
+    Square(int size = 5);
 
-    double getArea() override;
+    virtual void draw(int position, char embeddingSymbols = '*') const; // положение (от левого верхнего края), размер и заполняющие символы
+
+    double getArea() override; // возвращает площадь квадрата
     void print() const override;
+
+    void setSize(const int &size); //задать размер стороны квадрата
+    int getSize() const; // венуть размер стороны квадрата
+
+private:
+    int size; // размер стороны
 };
 
 

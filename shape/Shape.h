@@ -15,6 +15,7 @@ class Shape {
 public:
     Shape() = default;
 
+    virtual void draw(int position, char embeddingSymbols = '*') const; // положение, размер, форму и заполняющие символы
     virtual double getArea() = 0;
     virtual void print() const;
 };

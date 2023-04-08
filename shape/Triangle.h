@@ -8,10 +8,17 @@
 
 class Triangle : public TwoDimensionalShape {
 public:
-    Triangle() = default;
+    /// Прямоугольный треугольник
+    /// \param height Высота треугольника
+    /// \param width Ширина треугольника
+    Triangle(int height, int width);
 
-    virtual double getArea();
+    double getArea() override;
     void print() const override;
+
+    virtual void draw(int position, char embeddingSymbols = '*') const; // положение, размер, форму и заполняющие символы
+private:
+    int height, width;
 };
 
 
