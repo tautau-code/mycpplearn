@@ -12,7 +12,7 @@ public:
                   int &senderZip, int &addresseeZip, double &weight, double &price,
                   double &margin);
 
-    virtual double calculateCost() const override;
+    double calculateCost() const override;
 private:
     double margin; // наценка за двухдневную доставку
 };
