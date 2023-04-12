@@ -8,9 +8,9 @@
 
 class OvernightPackage : public Package {
 public:
-    OvernightPackage(string &name, string &address, string &city, string &state,
-    int &senderZip, int &addresseeZip, double &weight, double &price,
-    double &marginPerWeight);
+    OvernightPackage(string name, string address, string city, string state,
+    int senderZip, int addresseeZip, double weight, double price,
+    double marginPerWeight);
 
     double calculateCost() const override;
 private:

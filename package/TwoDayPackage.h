@@ -5,12 +5,13 @@
 #ifndef PACKAGE_TWODAYPACKAGE_H
 #define PACKAGE_TWODAYPACKAGE_H
 #include "Package.h"
+using namespace std;
 
 class TwoDayPackage : public Package {
 public:
-    TwoDayPackage(string &name, string &address, string &city, string &state,
-                  int &senderZip, int &addresseeZip, double &weight, double &price,
-                  double &margin);
+    TwoDayPackage(string name, string address, string city, string state,
+                  int senderZip, int addresseeZip, double weight, double price,
+                  double margin);
 
     double calculateCost() const override;
 private:

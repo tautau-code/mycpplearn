@@ -11,6 +11,7 @@ class Package {
 public:
     Package(string& name, string& address, string& city, string& state,
             int& senderZip, int& addresseeZip, double& weight, double& price);
+
     void setName(string& name);
     string getName() const;
 
